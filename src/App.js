@@ -9,6 +9,7 @@ import EditExercise from "./components/edit-exercises.component";
 import CreateExercise from "./components/create-exercises.component";
 import CreateUser from "./components/create-user.component";
 
+
 function App() {
   return (
     <Router>
@@ -20,9 +21,11 @@ function App() {
           <Route path="/exercise/:id" element={<EditExercise />} />
           <Route path="/create" element={<CreateExercise />} />
           <Route path="/user" element={<CreateUser />} />
+          
         </Routes>
       </div>
     </Router>
+    
   );
 }
 
